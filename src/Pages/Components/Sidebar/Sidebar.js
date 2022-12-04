@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { Button } from "@mui/material";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import React from 'react';
+import { Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
-function App() {
-  return (
-    <div className="App">
-      <Sidebar>
+
+const Sidebar = () => {
+    return (
+        <div>
+             <Sidebar>
         <Menu>
           <SubMenu label="Charts">
             <MenuItem> Pie charts </MenuItem>
@@ -16,8 +15,8 @@ function App() {
           <MenuItem> Calendar </MenuItem>
         </Menu>
       </Sidebar>
-    </div>
-  );
-}
+        </div>
+    );
+};
 
-export default App;
+export default Sidebar;
