@@ -1,21 +1,12 @@
-import logo from "./logo.svg";
+
 import "./App.css";
-import { Button } from "@mui/material";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import Drawer from "./Pages/Components/Drawer/Drawer";
+import Orders from "./Pages/Components/Orders/Orders";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar>
-        <Menu>
-          <SubMenu label="Charts">
-            <MenuItem> Pie charts </MenuItem>
-            <MenuItem> Line charts </MenuItem>
-          </SubMenu>
-          <MenuItem> Documentation </MenuItem>
-          <MenuItem> Calendar </MenuItem>
-        </Menu>
-      </Sidebar>
+      <Orders></Orders>
     </div>
   );
 }
