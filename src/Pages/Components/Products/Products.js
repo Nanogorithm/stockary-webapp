@@ -1,5 +1,6 @@
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
+import ProductBar from "./ProductBar";
 
 const columns  = [
   { field: "id", headerName: "ID", width: 100,  },
@@ -30,6 +31,10 @@ const Products = () => {
     <div>
       <div>
       <h2 className="text-4xl font-semibold text-left m-10">Products</h2>
+      </div>
+      {/* Bar */}
+      <div>
+        {/* <ProductBar></ProductBar> */}
       </div>
       {/* Table */}
       <div>

@@ -5,6 +5,15 @@ module.exports = {
   ],
   important: "#root",
   theme: {
+    colors: {
+      'primary': '#327AF2',
+      'secondary': '#0AE0D8',
+      'light': '#F8F8F8',
+      'secondaryHover': '#0CD6CE',
+      'primaryHover': '#1D65DC',
+      'dark': '#1F1F1F',
+      'white': '#FFFFFF',
+    },
     extend: {},
   },
   plugins: [],
