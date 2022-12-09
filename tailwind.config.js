@@ -13,6 +13,8 @@ module.exports = {
       'primaryHover': '#1D65DC',
       'dark': '#1F1F1F',
       'white': '#FFFFFF',
+      'gray': '#F7F9FB',
+      "tableH": "#8E8E8E"
     },
     extend: {},
   },

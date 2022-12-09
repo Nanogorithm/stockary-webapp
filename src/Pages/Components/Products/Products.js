@@ -3,7 +3,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import ProductBar from "./ProductBar";
 
 const columns  = [
-  { field: "id", headerName: "ID", width: 100,  },
+  { field: "id", headerName: "ID", width: 100,   },
   { field: "name", headerName: "Name", width: 220, sortable: false },
   { field: "category", headerName: "Category", width: 220 },
   { field: "availability", headerName: "Availability", width: 235 },

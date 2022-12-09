@@ -21,14 +21,14 @@ const Orders = () => {
   return (
     <div className="">
         <h3 className="text-4xl font-semibold text-left m-10">Orders</h3>
-      <TableContainer className="bg-slate-50 p-8 m-10" component={Paper}>
+      <TableContainer className="bg-gray p-8 m-10" component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow className="">
-              <TableCell className="text-slate-500 text-lg" align="left">Name</TableCell>
-              <TableCell className="text-slate-500 text-lg" align="left">Location</TableCell>
-              <TableCell className="text-slate-500 text-lg" align="left">Quantity</TableCell>
-              <TableCell className="text-slate-500 text-lg" align="left">Amount</TableCell>
+              <TableCell className="text-tableH text-base" align="left">Name</TableCell>
+              <TableCell className="text-tableH text-base" align="left">Location</TableCell>
+              <TableCell className="text-tableH text-base" align="left">Quantity</TableCell>
+              <TableCell className="text-tableH text-base" align="left">Amount</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
