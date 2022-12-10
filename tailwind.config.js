@@ -14,7 +14,8 @@ module.exports = {
       'dark': '#1F1F1F',
       'white': '#FFFFFF',
       'gray': '#F7F9FB',
-      "tableH": "#8E8E8E"
+      "tableH": "#8E8E8E",
+      "drawerHover": "#D6E2F8"
     },
     extend: {},
   },

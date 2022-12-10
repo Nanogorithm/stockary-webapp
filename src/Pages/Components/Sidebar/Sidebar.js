@@ -19,21 +19,68 @@ const drawerWidth = 240;
 const Sidebar = () => {
   return (
     <div>
-      <Box sx={{ display: "flex" }}>
-        <CssBaseline />
-        {/* <AppBar
+      {/* <Box sx={{ display: "flex" }}> */}
+      {/* <CssBaseline /> */}
+      <Drawer
+        PaperProps={{
+          sx: {
+            backgroundColor: "#F0F6FF",
+            width: drawerWidth,
+            flexShrink: 0,
+            "& .MuiDrawer-paper": {
+              width: drawerWidth,
+              boxSizing: "border-box",
+            },
+          },
+        }}
+        variant="permanent"
+        anchor="left"
+      >
+        <Toolbar />
+        <List className="">
+          {["Overview", "Product", "Customer", "Orders"].map((text, index) => (
+            <ListItem
+              className=" hover:bg-drawerHover hover:rounded-full"
+              key={text}
+              disablePadding
+            >
+              <ListItemButton>
+                <ListItemIcon>
+                  {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+      </Drawer>
+      {/* </Box> */}
+    </div>
+  );
+};
+
+export default Sidebar;
+
+{
+  /* <AppBar
           position="fixed"
           sx={{
             width: `calc(100% - ${drawerWidth}px)`,
             mr: `${drawerWidth}px`,
-          }} */}
-          {/* <Toolbar>
+          }} */
+}
+{
+  /* <Toolbar>
             <Typography variant="h6" noWrap component="div">
               Permanent drawer
             </Typography>
-          </Toolbar> */}
-        {/* </AppBar> */}
-        {/* <Box
+          </Toolbar> */
+}
+{
+  /* </AppBar> */
+}
+{
+  /* <Box
           component="main"
           sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
         >
@@ -68,50 +115,5 @@ const Sidebar = () => {
             accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam
             ultrices sagittis orci a.
           </Typography>
-        </Box> */}
-        <Drawer
-          sx={{
-            width: drawerWidth,
-            flexShrink: 0,
-            "& .MuiDrawer-paper": {
-              width: drawerWidth,
-              boxSizing: "border-box",
-            },
-          }}
-          variant="permanent"
-          anchor="right"
-        >
-          <Toolbar />
-          <Divider />
-          <List>
-            {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {["All mail", "Trash", "Spam"].map((text, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-        </Drawer>
-      </Box>
-    </div>
-  );
-};
-
-export default Sidebar;
+        </Box> */
+}
