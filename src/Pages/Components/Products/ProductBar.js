@@ -11,7 +11,7 @@ import { TextField } from "@mui/material";
 
 const ProductBar = () => {
   return (
-    <div className="bg-light rounded-3xl m-5 p-3 flex">
+    <div className="bg-light rounded-3xl my-3 p-3 flex">
       {/* Search Button */}
       <div className="flex-1">
         <Paper
@@ -71,7 +71,7 @@ const ProductBar = () => {
               d="M12 4.5v15m7.5-7.5h-15"
             />
           </svg>
-          <p className="font-medium text-white">Category</p>
+          <p className="font-medium text-white">Add Product</p>
         </button>
       </div>
     </div>
