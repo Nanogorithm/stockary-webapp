@@ -2,6 +2,7 @@ import { Button, TextField } from "@mui/material";
 import React from "react";
 import Box from "@mui/material/Box";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
 
 const currencies = [
   {
@@ -22,7 +23,7 @@ const AddProduct = () => {
   };
 
   return (
-    <div>
+    <div className="w-[1150px] ml-[340px]">
       <div className="flex">
         <div className="w-8/12">
           <div className="flex-1 bg-light mx-8 mt-24 p-12 rounded-2xl">
@@ -69,7 +70,9 @@ const AddProduct = () => {
         <Button className="bg-primary text-white rounded-2xl p-3">
           Publish
         </Button>
+        <Link to='/products'>
         <Button className=" text-black rounded-2xl p-3">Back</Button>
+        </Link>
       </div>
     </div>
   );

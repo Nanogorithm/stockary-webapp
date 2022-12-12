@@ -1,13 +1,9 @@
 import React from "react";
-import Icon from "@mui/material/Icon";
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
-import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import DirectionsIcon from "@mui/icons-material/Directions";
-import { TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const ProductBar = () => {
   return (
@@ -56,23 +52,25 @@ const ProductBar = () => {
         </button>
       </div>
       <div className="flex-2 ml-2 text-teal-500">
-        <button className="flex text-white bg-primary hover:bg-primaryHover rounded-full px-4 py-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="white"
-            className="w-6 h-6 mr-1"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4.5v15m7.5-7.5h-15"
-            />
-          </svg>
-          <p className="font-medium text-white">Add Product</p>
-        </button>
+        <Link to="/addproduct">
+          <button  className="flex text-white bg-primary hover:bg-primaryHover rounded-full px-4 py-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="white"
+              className="w-6 h-6 mr-1"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+            <p className="font-medium text-white">Add Product</p>
+          </button>
+        </Link>
       </div>
     </div>
   );

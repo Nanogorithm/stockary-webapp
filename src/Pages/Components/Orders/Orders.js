@@ -19,10 +19,10 @@ const rows = [
 
 const Orders = () => {
   return (
-    <div className="">
+    <div className="w-9/12 ml-[335px]">
       <h3 className="text-4xl font-semibold text-left m-10">Orders</h3>
       <TableContainer className="bg-gray p-8 m-10" component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <Table sx={{ minWidth: 550 }} aria-label="simple table">
           <TableHead>
             <TableRow className="">
               <TableCell className="text-tableH text-base" align="left">

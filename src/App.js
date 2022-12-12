@@ -1,12 +1,30 @@
-
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import AddProduct from "./Pages/Components/Products/AddProduct";
-import Dashboard from "./Pages/Dashboard";
+import Orders from "./Pages/Components/Orders/Orders";
+import Products from "./Pages/Components/Products/Products";
+import Overview from "./Pages/Components/Overview/Overview";
+import Sidebar from "./Pages/Components/Sidebar/Sidebar";
+import Customers from "./Pages/Components/Customers/Customers";
+import AddProduct from './Pages/Components/Products/AddProduct'
 
 function App() {
   return (
     <div className="App">
-      <Dashboard></Dashboard>
+      <div>
+        <Sidebar></Sidebar>
+      </div>
+      <div className="">
+        <Routes>
+          <Route path="/overview" element={<Overview></Overview>}></Route>
+          <Route path="/products" element={<Products></Products>}></Route>
+          <Route path="/customers" element={<Customers></Customers>}></Route>
+          <Route
+            path="/orders"
+            element={<Orders className=""></Orders>}
+          ></Route>
+          <Route path="/addproduct" element={<AddProduct></AddProduct>}></Route>
+        </Routes>
+      </div>
     </div>
   );
 }
