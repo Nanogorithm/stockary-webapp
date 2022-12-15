@@ -1,78 +1,68 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
-import Box from "@mui/material/Box";
-import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
-const currencies = [
-  {
-    value: "Bread",
-    label: "Bread",
-  },
-  {
-    value: "Cake",
-    label: "Cake",
-  },
-];
-
 const AddProduct = () => {
-  const [currency, setCurrency] = React.useState("EUR");
-
-  const handleChange = (event) => {
-    setCurrency(event.target.value);
-  };
-
   return (
-    <div className="w-[1150px] ml-[340px]">
-      <div className="flex">
-        <div className="w-8/12">
-          <div className="flex-1 bg-light mx-8 mt-24 p-12 rounded-2xl">
-            <h1 className="text-2xl items-start font-semibold">
+    <div>
+      <h1 className="mt-[60px] text-3xl font-semibold text-left ml-[375px] mb-6">
+        New Product
+      </h1>
+      <div className="grid grid-cols-2 gap-x-80">
+        {/* Information Card */}
+        <div className="">
+          <div className="ml-[375px] bg-light w-[500px] rounded-xl h-[280px] py-2 ">
+            <h2 className="text-2xl font-semibold text-left ml-5">
               Information
-            </h1>
-            <TextField
-              label={"Product Name"}
-              className="mt-4 bg-white w-8/12 "
+            </h2>
+            <input
+              type="text"
+              placeholder="Product Name"
+              className="p-3 mt-5 rounded-xl w-11/12 "
             />
-            <TextField label={"Description"} className="mt-4 bg-white w-8/12" />
-          </div>
-        </div>
-        <div className="flex-1 bg-light mr-12 mt-24 p-12 rounded-2xl">
-          <h1 className="text-2xl text-left ml-14 font-semibold">Organize</h1>
-          <TextField
-            id="outlined-select-currency"
-            select
-            label="Select"
-            value={currency}
-            onChange={handleChange}
-            className="mt-4 bg-white w-11/12"
-          >
-            {currencies.map((option) => (
-              <MenuItem key={option.value} value={option.value}>
-                {option.label}
-              </MenuItem>
-            ))}
-          </TextField>
-          <br />
-          <div className="flex">
-            <TextField
-              label={"Selling Price"}
-              className="mt-4 mr-2 bg-white w-5/12"
-            />
-            <TextField
-              label={"Cost Price"}
-              className="ml-2 mt-4 bg-white  w-5/12"
+            <input
+              type="text"
+              placeholder="Description"
+              className="align-top p-3 mt-4 text-left rounded-xl w-11/12 h-32"
             />
           </div>
+          <Link to='/products'>
+          <Button className="text-black ml-[280px] mt-5 mr-4">Back</Button></Link>
+          <Link to='/products'>
+          <Button className="bg-primary text-white mt-5">Publish</Button></Link>
         </div>
-      </div>
-      <div className="mt-5">
-        <Button className="bg-primary text-white rounded-2xl p-3">
-          Publish
-        </Button>
-        <Link to='/products'>
-        <Button className=" text-black rounded-2xl p-3">Back</Button>
-        </Link>
+        {/* Organize Card */}
+        <div className="bg-light w-[400px] rounded-xl h-[280px] ml-">
+          <h2 className="text-2xl font-semibold mt-5 text-left ml-5">
+            Organize
+          </h2>
+          <select name="" id="" className="p-4 mt-5 rounded-xl w-11/12">
+            <option value="Bread">Bread</option>
+            <option value="Chips">Chips</option>
+          </select>
+          <div className="grid grid-cols-2">
+            <div>
+              <h1 className="mt-6 font-medium text-left ml-5 mb-0">
+                Cost Price
+              </h1>
+              <input
+                type="text"
+                placeholder="Product Name"
+                className="p-5 mt-2 ml-3 rounded-xl w-10/12 "
+              />
+            </div>
+            <div>
+              <h1 className="mt-6 font-medium text-left ml-5 mb-0">
+                Cost Price
+              </h1>
+              <input
+                type="text"
+                placeholder="Product Name"
+                className="p-5 mt-2 rounded-xl w-10/12 "
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

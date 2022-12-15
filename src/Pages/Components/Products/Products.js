@@ -41,13 +41,15 @@ const rows = [
 const Products = () => {
   return (
     <div>
-      <h1 className="mt-[60px] text-3xl font-semibold text-left ml-[375px] mb-6">Products</h1>
+    <div>
+    <h1 className="mt-[60px] text-3xl font-semibold text-left ml-[375px] mb-6">Products</h1>
       <div className="w-9/12 ml-[375px]">
         <ProductBar></ProductBar>
       </div>
       <div className="ml-[375px]">
-        <div style={{ height: 600, width: "100%",  }}>
+        <div style={{ height: 750, width: "100%",  }}>
           <DataGrid
+          sx={{border:'none' }}
             rows={rows}
             columns={columns}
             pageSize={12}
@@ -55,6 +57,7 @@ const Products = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

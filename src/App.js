@@ -6,6 +6,8 @@ import Overview from "./Pages/Components/Overview/Overview";
 import Sidebar from "./Pages/Components/Sidebar/Sidebar";
 import Customers from "./Pages/Components/Customers/Customers";
 import AddProduct from './Pages/Components/Products/AddProduct'
+import Category from "./Pages/Components/Products/Category/Category";
+import AddCategory from "./Pages/Components/Products/Category/AddCategory";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             element={<Orders className=""></Orders>}
           ></Route>
           <Route path="/addproduct" element={<AddProduct></AddProduct>}></Route>
+          <Route path="/category" element={<Category></Category>}></Route>
+          <Route path="/addcategory" element={<AddCategory></AddCategory>}></Route>
         </Routes>
       </div>
     </div>
