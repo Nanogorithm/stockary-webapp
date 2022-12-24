@@ -10,7 +10,7 @@ const Overview = () => {
         Hello There, Shaad
       </h1>
       <div className="flex">
-        <div className="flex-none ml-[380px] mr-5 mt-12">
+        <div className="flex-none ml-[380px] mr-5 mt-12 ">
           <SalesCard></SalesCard>
         </div>
         <div className="flex-none ml-[30px] mt-12">

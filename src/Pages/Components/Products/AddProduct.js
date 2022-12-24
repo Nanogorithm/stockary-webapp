@@ -27,7 +27,7 @@ const AddProduct = () => {
             />
           </div>
           <Link to='/products'>
-          <Button className="text-black ml-[280px] mt-5 mr-4">Back</Button></Link>
+          <Button className="text-black ml-[300px] mt-5 mr-4">Back</Button></Link>
           <Link to='/products'>
           <Button className="bg-primary text-white mt-5">Publish</Button></Link>
         </div>

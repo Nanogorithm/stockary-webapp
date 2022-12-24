@@ -34,7 +34,7 @@ const Sidebar = () => {
         <Toolbar />
         <List>
         <Link to="/overview">
-            <ListItem className="hover:bg-drawerHover hover:bg-drawerHover hover:rounded-l-full mb-2 p-4">
+            <ListItem className="hover:bg-drawerHover hover:rounded-l-full mb-2 p-4">
               <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

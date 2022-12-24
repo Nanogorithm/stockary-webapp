@@ -25,7 +25,7 @@ function App() {
             element={<Orders className=""></Orders>}
           ></Route>
           <Route path="/addproduct" element={<AddProduct></AddProduct>}></Route>
-          <Route path="/category" element={<Category></Category>}></Route>
+          <Route path="/categories" element={<Category></Category>}></Route>
           <Route path="/addcategory" element={<AddCategory></AddCategory>}></Route>
         </Routes>
       </div>
