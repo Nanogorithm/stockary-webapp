@@ -35,7 +35,7 @@ const CategoryBar = () => {
       <div className="flex-2">
       </div>
       <div className="flex-2 ml-2 text-teal-500">
-        <Link to="/">
+        <Link to="/addcategory">
           <button className="flex text-black bg-secondary hover:bg-secondaryHover rounded-full px-4 py-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
